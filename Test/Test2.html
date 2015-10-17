@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Autoevaluacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a la Autoevaluación correspondiente al segundo capítulo \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+"\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de dos puntos"+
+" \n\n2. Las respuestas no contestadas ni suman ni restan puntos.")
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "c";
+resp[2] = "a";
+resp[3] = "b";
+resp[4] = "a";
+resp[5] = "a";
+
+function Engine(question, repose)
+{
+if (repose != resp[question])
+{
+if (!faite[question])
+{faite[question] = -1;
+alert("Respuesta incorrecta");
+}
+
+}
+else {
+
+if (!faite[question]) {
+faite[question] = -1;
+score=score+2;
+
+alert("¡Correcto!");
+}
+
+}
+}
+
+function Nivel () {
+
+if (score ==10) {
+alert(score + "/10 " + "Muy bien");
+}
+if (score == 8) {
+alert(score + "/10 " + "Bien");
+}
+if (score == 6  ) {
+alert(score + "/10 " + "Aprobado");
+}
+if (score == 4) {
+alert(score + "/10 " + "Insuficiente");
+}
+if (score <= 2) {
+alert("Su puntuación es: "+ score
++"\nLa puntuación máxima que podía obtener es 10"
++"\nTiene que reviazar nuevamente sus lecciones"
++"\nSu porcentaje de aciertos es menos del 20%");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+<tr>
+<td width="50" rowspan="2"><img src="C:\Users\CARLOS\Desktop\interaccion humano computadora\camara.gif" width="50" height="50"></td>
+<td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Test
+de Autoevaluación</b></font></td>
+</tr>
+<tr>
+<td width="515" bgcolor="#336699"> </td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td> </td>
+<td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Capitulo 2: Fotografía de acción </font></td>
+</tr>
+<tr>
+<td height="521"> </td>
+<td height="521">
+<div align="center">
+<div align="left">
+<FORM NAME="formulario" ACTION="">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+1.¿Cómo puedes capturar una única imagen con tu cámara?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+a. Tomar una imagen borrosa para transmitir la impresión de movimiento.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+b. "congelar" la imagen para capturar un momento concreto.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+c. Las dos anteriores.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+<br>
+
+2.¿Qué sucede si estableces una velocidad de obturación más rápida?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+a. Llegará menos luz al sensor digital de la cámara y la imagen quedará subexpuesta.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+b. Llegara menos luz al sensor digital de la cámara y obtener una exposición correcta .</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+c. Llegara mas luz al sensor digital de la cámara y obtener una nitidez correcta.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+3.¿Qué logramos con la técnica de barrido?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+a. Obtener una imagen bastante nítida de un sujeto en movimiento incluso con velocidades de obturación lentas</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+b. Obtener imagenes con un mejor enfoque></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+c. Obtener imagenes con un contraste  impecable.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+4.¿De que sirve la estabilización de la imagen ?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+a. Reduce los efectos del movimiento de la cámara .</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+b. Da un mejor contraste</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=c>
+c. Crea una sensación de mayor nitidez</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+5. ¿Qué entiendes por obturación?: </font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=a>
+a. Tiempo durante el que llega la luz al dispositivo fotosensible.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=b>
+b. Mejor momento para tomar la imagen</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=c>
+c. Peor momento para tomar la imagen.</font></p>
+<p></p>
+<p>
+<input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+
+<input type="button" name="repose" value="Respuestas Correctas"
+onClick="alert('Respuestas Correctas \n\n 1A \n 2B \n 3C \n 4B \n 5C ')">
+<input type="reset" value="Borrar resultados" name="reset">
+</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para
+tomar nuevamente la autoevaluación presione el botón
+'F5' </font></p>
+</FORM>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p> </p>
+
+</body>
+</html>

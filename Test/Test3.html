@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Autoevaluacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a la Autoevaluación correspondiente al tercer capítulo \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+"\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de dos puntos"+
+" \n\n2. Las respuestas no contestadas ni suman ni restan puntos.")
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "c";
+resp[2] = "b";
+resp[3] = "a";
+resp[4] = "b";
+resp[5] = "a";
+
+function Engine(question, repose)
+{
+if (repose != resp[question])
+{
+if (!faite[question])
+{faite[question] = -1;
+alert("Respuesta incorrecta");
+}
+
+}
+else {
+
+if (!faite[question]) {
+faite[question] = -1;
+score=score+2;
+
+alert("¡Correcto!");
+}
+
+}
+}
+
+function Nivel () {
+
+if (score ==10) {
+alert(score + "/10 " + "Muy bien");
+}
+if (score == 8) {
+alert(score + "/10 " + "Bien");
+}
+if (score == 6  ) {
+alert(score + "/10 " + "Aprobado");
+}
+if (score == 4) {
+alert(score + "/10 " + "Insuficiente");
+}
+if (score <= 2) {
+alert("Su puntuación es: "+ score
++"\nLa puntuación máxima que podía obtener es 10"
++"\nTiene que reviazar nuevamente sus lecciones"
++"\nSu porcentaje de aciertos es menos del 20%");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+<tr>
+<td width="50" rowspan="2"><img src="C:\Users\CARLOS\Desktop\interaccion humano computadora\camara.gif" width="50" height="50"></td>
+<td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Test
+de Autoevaluación</b></font></td>
+</tr>
+<tr>
+<td width="515" bgcolor="#336699"> </td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td> </td>
+<td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Capitulo 3: Fotografía nocturna </font></td>
+</tr>
+<tr>
+<td height="521"> </td>
+<td height="521">
+<div align="center">
+<div align="left">
+<FORM NAME="formulario" ACTION="">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+1.¿Como se presenta el ruido al amplificar señales de luz?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+a. Un mejor enfoque en la imagen.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+b. Menor nitidez en la imagen.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+c. Puntos de color por toda la imagen.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+<br>
+
+2.¿Cuántos puntos de compensacion utilizarias en una imagen demasiado clara?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+a. +1 o +2 .</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+b. -1 o -2.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+c. 1 o 0.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+3.¿En que intervalos de tiempo debes de tomar imagenes para apreciar el crepúsculo?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+a. 10 o 15 minutos</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+b. 1 o 5 minutos.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+c. 5 o 10 minutos.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+4. ¿A que se debe que las personas que se desplazan en una escena nocturna suelen tener apariencia de fantasmas alargados ?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+a. Debido a que la imagen se tomo en un poco tiempo.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+b. Debido a que el fondo que hay detrás ha estado expuesto durante un tiempo.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=c>
+c. Una mala configuración en el enfoque </font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+5. ¿Cómo tomarías una fotografia con un mayor impacto en las calles de la ciudad?: </font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=a>
+a. Despúes de le lluvia.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=b>
+b. En un día con sol.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=c>
+c. En un día nublado.</font></p>
+<p></p>
+<p>
+<input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+
+<input type="button" name="repose" value="Respuestas Correctas"
+onClick="alert('Respuestas Correctas \n\n 1A \n 2B \n 3C \n 4B \n 5C ')">
+<input type="reset" value="Borrar resultados" name="reset">
+</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para
+tomar nuevamente la autoevaluación presione el botón
+'F5' </font></p>
+</FORM>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p> </p>
+
+</body>
+</html>

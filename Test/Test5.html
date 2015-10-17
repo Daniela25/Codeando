@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Autoevaluacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a la Autoevaluación correspondiente al quinto capítulo \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+"\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de dos puntos"+
+" \n\n2. Las respuestas no contestadas ni suman ni restan puntos.")
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "c";
+resp[2] = "a";
+resp[3] = "c";
+resp[4] = "a";
+resp[5] = "c";
+
+function Engine(question, repose)
+{
+if (repose != resp[question])
+{
+if (!faite[question])
+{faite[question] = -1;
+alert("Respuesta incorrecta");
+}
+
+}
+else {
+
+if (!faite[question]) {
+faite[question] = -1;
+score=score+2;
+
+alert("¡Correcto!");
+}
+
+}
+}
+
+function Nivel () {
+
+if (score ==10) {
+alert(score + "/10 " + "Muy bien");
+}
+if (score == 8) {
+alert(score + "/10 " + "Bien");
+}
+if (score == 6  ) {
+alert(score + "/10 " + "Aprobado");
+}
+if (score == 4) {
+alert(score + "/10 " + "Insuficiente");
+}
+if (score <= 2) {
+alert("Su puntuación es: "+ score
++"\nLa puntuación máxima que podía obtener es 10"
++"\nTiene que reviazar nuevamente sus lecciones"
++"\nSu porcentaje de aciertos es menos del 20%");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+<tr>
+<td width="50" rowspan="2"><img src="C:\Users\CARLOS\Desktop\interaccion humano computadora\camara.gif" width="50" height="50"></td>
+<td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Test
+de Autoevaluación</b></font></td>
+</tr>
+<tr>
+<td width="515" bgcolor="#336699"> </td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td> </td>
+<td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Capitulo 5: Fotografía de paisajes urbanos </font></td>
+</tr>
+<tr>
+<td height="521"> </td>
+<td height="521">
+<div align="center">
+<div align="left">
+<FORM NAME="formulario" ACTION="">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+1. ¿Qué ofrece a un fotógrafo de paisajes urbanos el sol bajo</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+a. Ofrece un brillo rojizo que da un toque cálido a la piedra y al ladrillo.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+b. Ofrece un brillo que da un mejor contrste a la imagen.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+c. Ofrece un brillo dorado que da un toque cálido a la pidra y al ladrillo.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+<br>
+
+2. ¿Qué es lo que se busca para obtener una fotografía urbana  impáctante?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+a. La mezcla de zonas.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+b. El solo enfocar una zona.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+c. Tener la máxima luz posible.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+3.¿Qué  sucedaria si nos arrodillamos mientras apuntamos con la cámara hacia arriba?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+a. Crear imágenes comúnes.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+b. Crear imágenes con una perspectiva perfecta.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+c. Crear imágenes con una perspectiva más exagerada.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+4. ¿Cúanta reduccion de intensidad de luz  nos porporciona un filtro de densidad de 3?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+a. Una reducción de la intensidad de la luz de 10 pasos.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+b. Una reducción de la intensidad de la luz de 15 pasos.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=c>
+c. Una reducción de la intensidad de la luz de 5 pasos.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+5. ¿Por qué se prefiere utilizar teleobjetivos más cortos en paisajes urbanos?: </font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=a>
+a. Obtener una imagen con un color neutro.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=b>
+b. Aislar áreas más grandes y conseguir mayor nivel de detalle.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=c>
+c. Aislar áreas más pequeñas y conseguir mayor nivel de detalle.</font></p>
+<p></p>
+<p>
+<input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+
+<input type="button" name="repose" value="Respuestas Correctas"
+onClick="alert('Respuestas Correctas \n\n 1A \n 2B \n 3C \n 4B \n 5C ')">
+<input type="reset" value="Borrar resultados" name="reset">
+</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para
+tomar nuevamente la autoevaluación presione el botón
+'F5' </font></p>
+</FORM>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p> </p>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Autoevaluacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a la Autoevaluación correspondiente al primer capítulo \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+"\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de dos puntos"+
+" \n\n2. Las respuestas no contestadas ni suman ni restan puntos.")
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "a";
+resp[2] = "b";
+resp[3] = "c";
+resp[4] = "b";
+resp[5] = "a";
+
+function Engine(question, repose)
+{
+if (repose != resp[question])
+{
+if (!faite[question])
+{faite[question] = -1;
+alert("Respuesta incorrecta");
+}
+
+}
+else {
+
+if (!faite[question]) {
+faite[question] = -1;
+score=score+2;
+
+alert("¡Correcto!");
+}
+
+}
+}
+
+function Nivel () {
+
+if (score ==10) {
+alert(score + "/10 " + "Muy bien");
+}
+if (score == 8) {
+alert(score + "/10 " + "Bien");
+}
+if (score == 6  ) {
+alert(score + "/10 " + "Aprobado");
+}
+if (score == 4) {
+alert(score + "/10 " + "Insuficiente");
+}
+if (score <= 2) {
+alert("Su puntuación es: "+ score
++"\nLa puntuación máxima que podía obtener es 10"
++"\nTiene que reviazar nuevamente sus lecciones"
++"\nSu porcentaje de aciertos es menos del 20%");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+<tr>
+<td width="50" rowspan="2"><img src="C:\Users\CARLOS\Desktop\interaccion humano computadora\images.jpg" width="50" height="50"></td>
+<td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Test
+de Autoevaluación</b></font></td>
+</tr>
+<tr>
+<td width="515" bgcolor="#336699"> </td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td> </td>
+<td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Capitulo 1: Fotografía en blanco y negro </font></td>
+</tr>
+<tr>
+<td height="521"> </td>
+<td height="521">
+<div align="center">
+<div align="left">
+<FORM NAME="formulario" ACTION="">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+1.¿Qué época del año es mejor para fotografías en blanco y negro ?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+a. Invierno.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+b. Otoño.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+c. Primavera.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+<br>
+
+2.¿Por qué es eficaz añadir iluminación vertical?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+a. Proporciona menor contraste entre las luces y las sombras.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+b. Proporciona un contraste fuerte entre las luces y las sombras.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+c. Da una imágen mas nítida.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+3. Gracias a su luz es posible obtener sombras muy largas y se puede 
+lograr una atractiva textura cuando se proyecta sobre piedra o cemento</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+a. La luna</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+b. Las estrellas</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+c. El sol.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+4.En una composición usando filtros amarillos y rojos ¿qué sucede?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+a. Los colores azules obtienen mas intensidad .</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+b. Se absorbe la luz con lo que se logra que los cielos azules aparezcan más oscuros en la imagen.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=c>
+c. Se absorbe la luz con lo que se logra que el pasto aparezca más obscuro en la imagen.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+5. El reflejo amarillo de las luces de la calle hacen que: </font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=a>
+a. Se le de vida a la escena.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=b>
+b. Aporta demasiada luz a la imágen y por ende la imágen se arruina.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=c>
+c. Crea un efecto reflejo en la imágen.</font></p>
+<p></p>
+<p>
+<input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+
+<input type="button" name="repose" value="Respuestas Correctas"
+onClick="alert('Respuestas Correctas \n\n 1A \n 2B \n 3C \n 4B \n 5C ')">
+<input type="reset" value="Borrar resultados" name="reset">
+</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para
+tomar nuevamente la autoevaluación presione el botón
+'F5' </font></p>
+</FORM>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p> </p>
+
+</body>
+</html>

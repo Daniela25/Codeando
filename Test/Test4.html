@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Autoevaluacion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+alert("Bienvenido a la Autoevaluación correspondiente al cuarto capítulo \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+"\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de dos puntos"+
+" \n\n2. Las respuestas no contestadas ni suman ni restan puntos.")
+//-->
+
+var resp = new Array;
+var faite = new Array;
+var score = 0;
+
+resp[1] = "a";
+resp[2] = "b";
+resp[3] = "a";
+resp[4] = "c";
+resp[5] = "c";
+
+function Engine(question, repose)
+{
+if (repose != resp[question])
+{
+if (!faite[question])
+{faite[question] = -1;
+alert("Respuesta incorrecta");
+}
+
+}
+else {
+
+if (!faite[question]) {
+faite[question] = -1;
+score=score+2;
+
+alert("¡Correcto!");
+}
+
+}
+}
+
+function Nivel () {
+
+if (score ==10) {
+alert(score + "/10 " + "Muy bien");
+}
+if (score == 8) {
+alert(score + "/10 " + "Bien");
+}
+if (score == 6  ) {
+alert(score + "/10 " + "Aprobado");
+}
+if (score == 4) {
+alert(score + "/10 " + "Insuficiente");
+}
+if (score <= 2) {
+alert("Su puntuación es: "+ score
++"\nLa puntuación máxima que podía obtener es 10"
++"\nTiene que reviazar nuevamente sus lecciones"
++"\nSu porcentaje de aciertos es menos del 20%");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="785" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699" height="2">
+<tr>
+<td width="50" rowspan="2"><img src="C:\Users\CARLOS\Desktop\interaccion humano computadora\camara.gif" width="50" height="50"></td>
+<td width="515" class="TopicTitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699"><b>Test
+de Autoevaluación</b></font></td>
+</tr>
+<tr>
+<td width="515" bgcolor="#336699"> </td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td> </td>
+<td class="TopicSubtitle"><font face="Verdana, Arial, Helvetica, sans-serif" color="#336699">Capitulo 4: Fotografía de otoño </font></td>
+</tr>
+<tr>
+<td height="521"> </td>
+<td height="521">
+<div align="center">
+<div align="left">
+<FORM NAME="formulario" ACTION="">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+1. ¿De acuerdo al orden que ventajas son proporcinadas por colores "neutro" / "rojo vívido" ?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+a. Colores más precisos / más vida a hojas otoñales.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+b. Más vida a hojas otoñales / Colores más precisos.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+c. Más vida a lugares rocosos / Mayor nitidez.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+<br>
+
+2.¿Qué sucede un balance de blancos "nublado" en días grises de otoño?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+a. Se perderán los colores que ves frente a ti.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+b. Se realzarán los colores que ves frente a ti.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+c. Se perdera en enfoque en la imagen.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+3.¿Qué sucede si la luz del sol se refleja en una superficie no metálica?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+a. Las ondas se ordenan y toman todas el mismo ángulo respecto al eje.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+b. Las ondas no toman el mismo ángulo respecto al eje.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+c. Las ondas continuan normalmente.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+4.¿Por qué hay que tener cuidado con el filtro polarizador?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+a. superficies brillantes tendrán un mayor contraste.</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+b. superficies brillantes parecerán tener un mayor brillo</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=4 onClick="Engine(4, this.value)" type=radio value=c>
+c. superficies brillantes parecerán haber perdido su brillo</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+5. ¿Cómo asegurarías no perder todo el lustre de los colores dorados?</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=a>
+a. Establecer un color "neutro".</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=b>
+b. establecer un filtro polarizado en luz de día</font></p>
+<p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<input name=5 onClick="Engine(5, this.value)" type=radio value=c>
+c. estableciendo el balance de blancos en luz de día.</font></p>
+<p></p>
+<p>
+<input name=Resulta onClick=Nivel() type=button value=Resultados>
+
+
+<input type="button" name="repose" value="Respuestas Correctas"
+onClick="alert('Respuestas Correctas \n\n 1A \n 2B \n 3C \n 4B \n 5C ')">
+<input type="reset" value="Borrar resultados" name="reset">
+</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">* Para
+tomar nuevamente la autoevaluación presione el botón
+'F5' </font></p>
+</FORM>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<p> </p>
+
+</body>
+</html>
